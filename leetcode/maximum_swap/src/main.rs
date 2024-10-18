@@ -20,7 +20,11 @@ fn maximum_swap(num: i32) -> i32 {
     }  
 
 
-   return digit_vec.iter().collect::<String>().parse().unwrap(); 
+   return digit_vec
+        .iter()
+        .collect::<String>()
+        .parse()
+        .unwrap(); 
 }
 
 fn find_swap_idx(digits: &Vec<char>, idx: usize) -> Option<usize> {
